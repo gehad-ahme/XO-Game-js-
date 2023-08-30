@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./page.css">
+    <title>XO Game</title>
+</head>
+<body>
+    <h1>XO Game</h1>
+    <div class="container">
+        <p id="status">Wating To Start Game</p>
+        <!--xo game board-->
+        <div id="board">
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="0">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="1">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="2">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="3">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="4">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="5">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="6">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="7">
+        </div>
+        <div class="cell">
+            <img src="./assets/abc_letter.png" data-cell-index="8">
+        </div>
+        </div>
+        
+    </div>
+    <!--div score-->
+    <div id="score">
+        <h3 class="h3-text">Scores</h3>
+        <dl>
+            <dt>Player X:</dt>
+            <dd id="playerXscore">0</dd>
+            <dt>player O:</dt>
+            <dd id="playerOscore">0</dd>
+        </dl>
+    </div>
+    <div class="btn">
+        <button id="newGame" onclick="newGame()">New Game</button>
+    </div>
+    <script src="./main.js"></script> 
+    
+</body>
+</html>
